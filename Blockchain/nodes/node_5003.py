@@ -148,7 +148,7 @@ def mine_block():
     proof = blockchain.proof_of_work(previous_proof)
 
     # Adds transaction with static variables for receiver and amount
-    blockchain.add_transaction(node_address, 'Artiiz', 10)
+    blockchain.add_transaction(node_address, 'User 3', 10)
 
     # Create a block
     block = blockchain.create_block(proof, previous_hash)
@@ -232,4 +232,4 @@ def is_valid():
 
 
 # Running the App
-app.run(host='0.0.0.0', port=5000)
+app.run(host='0.0.0.0', port=5003)
